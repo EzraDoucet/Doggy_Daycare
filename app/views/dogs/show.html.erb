@@ -1,0 +1,24 @@
+<h1>Details for <%= @dog.name %></h1>
+
+<!-- ID -->
+<p>
+ <strong>ID: <%= @dog.id %></strong>
+</p>
+
+<!-- Breed -->
+<p>
+ <strong>Breed: <%= @dog.breed %></strong>
+</p>
+
+<!-- Age -->
+<p>
+ <strong>Age: <%= @dog.age %></strong>
+</p>
+
+<!-- Date added -->
+<p>
+ <strong>Added on: <%= @dog.created_at.stamp("nov 2, 2017") %></strong>
+</p>
+
+
+<%= link_to 'Home', dogs_path, class: 'btn btn-default' %>
