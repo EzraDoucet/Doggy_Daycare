@@ -7,6 +7,11 @@
  <strong>ID: <%= @dog.id %></strong>
 </p>
 
+<!-- Owner -->
+<p>
+ <strong>Owner: <%= @dog.owner %></strong>
+</p>
+
 <!-- Breed -->
 <p>
  <strong>Breed: <%= @dog.breed %></strong>
@@ -21,6 +26,5 @@
 <p>
  <strong>Added on: <%= @dog.created_at.stamp("nov 2, 2017") %></strong>
 </p>
-
 
 <%= link_to 'Home', dogs_path, class: 'btn btn-default' %>

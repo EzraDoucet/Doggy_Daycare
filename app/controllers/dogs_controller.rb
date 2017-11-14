@@ -50,14 +50,14 @@ class DogsController < ApplicationController
   if @dog.destroy
    redirect_to dogs_url, notice: "Successfully deleted #{@dog.name}."
   else
-   redirect_to dog_url, notice: "Couldn't delete #{@dog.name}"
+   redirect_to dog_url, notice: "Couldn't delete #{@dog.name}."
   end
  end
 
  private
 
  def dog_params
-  params.require(:dog).permit(:name, :age, :breed)
+  params.require(:dog).permit(:name, :age, :breed, :owner)
  end
 
  def set_dog
