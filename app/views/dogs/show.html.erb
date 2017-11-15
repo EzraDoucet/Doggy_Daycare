@@ -9,7 +9,7 @@
 
 <!-- Owner -->
 <p>
- <strong>Owner: <%= @dog.owner %></strong>
+ <strong>Owner: <%= @dog.owner.try(:name) %></strong>
 </p>
 
 <!-- Breed -->
