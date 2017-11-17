@@ -14,7 +14,7 @@
 
 <!-- Breed -->
 <p>
- <strong>Breed: <%= @dog.breed %></strong>
+ <strong>Breed: <%= @dog.breed.try(:name) %></strong>
 </p>
 
 <!-- Age -->

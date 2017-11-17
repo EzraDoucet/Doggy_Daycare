@@ -7,7 +7,7 @@
     <!-- makes drop down of all : save as, list to check, what to save, what to display -->
  <br>
  <%= form_field.label :breed %>
- <%= form_field.text_field :breed %>
+ <%= form_field.collection_select :breed_id, Breed.all, :id, :name %>
  <br>
  <%= form_field.label :age %>
  <%= form_field.number_field :age %>
