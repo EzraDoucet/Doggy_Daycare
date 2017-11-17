@@ -10,5 +10,12 @@
   <%= @owner.phone %>
 </p>
 
-<%= link_to 'Edit', edit_owner_path(@owner) %> |
-<%= link_to 'Back', owners_path %>
+<ul>
+ <% @owner.dogs.order('name').each do |dogs_owned| %>
+
+ <li><%= link_to dogs_owned.name, dog_path(dogs_owned) %></li>
+ <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_owner_path(@owner), class: 'btn btn-info' %> |
+<%= link_to 'Back', owners_path, class: 'btn btn-info' %>
