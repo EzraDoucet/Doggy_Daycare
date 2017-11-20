@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 
 # ** My Gems **
 gem 'stamp'
+gem 'faker'
 
 # ** Styles **
 gem 'bootstrap-sass'
